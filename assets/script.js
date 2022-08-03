@@ -6,10 +6,16 @@ var currentDay = document.getElementById("currentDay")
 currentDay.textContent = today
 
 
-
 // allow text area to save entry when button is pushed
 
-localStorage.setItem(time, text);
+$(".saveBtn").on("click", function () 
+   
+
+)
+
+
+
+// text area for adding appointments and saving
 
 $("#8am .description").val(localStorage.getItem("hour8"));
 $("#9am .description").val(localStorage.getItem("hour9"));
@@ -24,6 +30,5 @@ $("#5pm .description").val(localStorage.getItem("hour5"));
 $("#6pm .description").val(localStorage.getItem("hour6"));
 $("#7pm .description").val(localStorage.getItem("hour7"));
 
-// text area for adding appointments and saving
 
-
+localStorage.setItem(time, text);
